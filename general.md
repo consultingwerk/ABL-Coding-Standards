@@ -119,7 +119,7 @@ END.
 
 ## END statements
 
-End statements should use the option to specific the block type they are closing, like 
+End statements should use the option to specify the block type they are closing, like 
 
 ```
 END CASE.
