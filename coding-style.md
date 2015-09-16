@@ -22,3 +22,25 @@ DISPLAY i .
 There are a few ABL keywords where the ABL documentation obviously provides an abbreviated form. One example is the RCODE-INFO system-handle. This appears to be an abbreviation for RCODE-INFORMATION.
 
 It is considered good practice to use the documented form and not the undocumented form in cases like this.
+
+# Test Code (Debugging through messages)
+
+While all program code should be nicely indented following it's block structure, test messages etc. are supposed to be aligned to the very left of the source code.
+
+Example:
+
+```
+            DatasetHelper:ThrowDatasetErrors (DATASET dsAuftragsart:HANDLE) . 
+
+            FIND FIRST eAuftragsart .
+            
+BufferHelper:ShowBuffer (BUFFER eAuftragsart:HANDLE) .
+            
+            /* Mandant/Unternehmen should be assigned by HaufeDataAccess:CommitChanges */
+            FIND Auftragsart WHERE Auftragsart.MandantNr     = oAppSession:Tenant:Mandant 
+                               AND Auftragsart.Unternehmen   = oAppSession:Tenant:Unternehmen
+                               AND Auftragsart.AuftragsartNr = iAuftragsArtNr
+                NO-LOCK NO-ERROR . 
+```
+
+This makes it more obvious that the code should be removed before finalizing the work.
