@@ -202,3 +202,20 @@ DISPLAY
     [WITH FRAME {FrameName}]
     .
 ```
+
+### Comments
+
+## Style
+
+A normal comment uses the "old" style of coding.
+
+/* here is the comment */
+
+A typical comment including the name of the editor and the date would look like this:
+
+/* Marko Rueterbories / Consultingwerk Ltd. 04.06.2017:
+   Changed something here */
+
+## Restriction
+
+As a matter of fact, as long as we are supporting older versions of OpenEdge prior to 11.6 it is not allowed to use double slashes "//" style comments. Doing this would break the build in all older versions of OpenEdge. 
