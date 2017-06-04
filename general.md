@@ -203,9 +203,9 @@ DISPLAY
     .
 ```
 
-### Comments
+## Comments
 
-## Style
+### Style
 
 A normal comment uses the "old" style of coding.
 
@@ -220,6 +220,6 @@ A typical comment including the name of the editor and the date would look like 
    Changed something here */
 ```
 
-## Restriction
+### Restriction
 
 As a matter of fact, as long as we are supporting older versions of OpenEdge prior to 11.6 it is not allowed to use double slashes "//" style comments. Doing this would break the build in all older versions of OpenEdge. 
