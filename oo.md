@@ -36,7 +36,7 @@ For better readability USING statements should be formatted in tabular order and
 Variables should be defined without the package name to enhance readability of source code.
 
 ```
-DEFINE VARIABLE ... AS {unqualified class of ...} 
+DEFINE VARIABLE ... AS {unqualified class of ...} NO-UNDO . 
 ```
 
 ## Class Names
