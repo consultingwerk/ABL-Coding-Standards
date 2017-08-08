@@ -76,3 +76,19 @@ CLASS Demo.Customer.CustomerBusinessEntity
     INHERITS BusinessEntity
     USE-WIDGET-POOL: 
 ```
+
+### Usabe of THIS-OBJECT references
+
+When accessing an object instance's own members (methods, properties, events), we should always use THIS-OBJECT as this makes the scope clearer:
+
+```
+THIS-OBJECT:RetrieveData () .
+```
+
+When accessing static members (methods, properites, events) of the same class, we'll always be referenceing the member with the (short) class name:
+
+```
+BufferHelper:UniqueIndexFields () .
+```
+
+Exception from those rules are class wide (static or instance scoped) variables (variables defined outside any method). Those may be referenced by the short variable name only. 
