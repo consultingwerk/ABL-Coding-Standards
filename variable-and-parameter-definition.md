@@ -24,7 +24,7 @@ Progress.Lang.Object (and derived) | o
 
 The variable names [i, j, n, m] are allowed as loop counters (INTEGER).
 
-**Must-have rule:** If the variable names are short then only those four names should be used are used.
+**Must-have rule:** If the variable names are short then only those four names should be used.
 
 **Should Rule:** If there are nested loops then the pairs of i + j and n + m should be used.
 
