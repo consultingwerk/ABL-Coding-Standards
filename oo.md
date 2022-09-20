@@ -77,7 +77,7 @@ CLASS Demo.Customer.CustomerBusinessEntity
     USE-WIDGET-POOL: 
 ```
 
-### Usabe of THIS-OBJECT references
+### Usage of THIS-OBJECT references
 
 When accessing an object instance's own members (methods, properties, events), we should always use THIS-OBJECT as this makes the scope clearer:
 
