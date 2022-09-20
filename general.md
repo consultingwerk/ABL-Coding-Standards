@@ -146,7 +146,7 @@ Coding an “IF ... THEN NEXT.” is only allowed if the condition cannot be add
 
 ```
 FOR EACH ...:
-	FIND [FIRST] {WEHERE|OF} ... .
+	FIND [FIRST] {WHERE|OF} ... .
 	IF AVAILABLE THEN DO:
 ```
 
